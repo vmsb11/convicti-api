@@ -1,5 +1,13 @@
 # convicti-api
 
+## Implementação do projeto
+
+O projeto foi implementado em NodeJS com o banco de dados MySQL.
+As principais bibliotecas utilizadas foram:
+- Sequelize: para realizar o mapeamento das entidades da base de dados
+- Express: para realizar a criação da API e das requisições da mesma
+- JSON Web Token: para implementar a segurança da API por meio da criação de tokens no processamento da autenticação dos usuários
+
 ## Instalação
 
 Clone o repositório e instale as dependências.
