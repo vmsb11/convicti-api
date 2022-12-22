@@ -37,6 +37,38 @@ Observação: a aplicação frontend está acessando essa API por meio da URL ht
 ## Banco de dados
 
 
+Base de dados
+
+1) Usuários (Users)
+
+Armazena informações básicas sobre os usuários como nome, email, senha, status e cargo.
+
+2) Diretores (Directors)
+
+Armazena informações sobre os diretores, é feita uma associação com a entidade usuários para que se identifique quais os usuários são diretores.
+Há um campo generalManager que identifica se é um diretor geral ou não
+
+3) Diretorias (Boards)
+
+Armazena informações sobre as diretorias com seus respectivos diretores, portanto, é feita uma ligação com a entidade diretores.
+
+4) Gerentes (Managers)
+
+Armazena informações sobre os usuários que são gerentes, portanto, é feita uma ligação com a entidade usuários
+
+5) Unidades (Units)
+
+Armazena informações sobre as unidades com seus respectivos gerentes, portanto, é feita uma ligação com a entidade gerentes
+
+6) Vendedores (Sellers)
+
+Armazena informações sobre os vendedores e quais unidades os mesmos pertentece, é feita uma conexão com a entidade unidades
+
+7) Vendas (Sales)
+
+Armazena informações sobre as vendas realizadas conectando a unidade, o vendedor, a diretoria e o gerente responsável, é feita ligações com as entidades em questão
+
+
 ## Rotas da API e detalhamento do funcionamento das mesmas
 
 Rotas da API
